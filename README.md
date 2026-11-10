@@ -4,6 +4,10 @@ A [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-harness) Web UI plu
 
 The button's box and its 10 px bottom margin are removed with it, so the plugin list below moves up and no empty gap is left behind. Everything else in the sidebar — brand, panel list, workspaces, footer — keeps its layout.
 
+| Before | After |
+|---|---|
+| ![Sidebar with the New Session button](before.png) | ![Sidebar without the New Session button](after.png) |
+
 ## Why a style override
 
 The button is hard-coded in the sidebar shell of `@deepseek-ai/dsh-client-ui-sidebar`:
