@@ -1,0 +1,12 @@
+# dsh-hide-new-session bundle layer: exactly one plugin row.
+#
+# The package is dual-face. The Node half (index.js) is a no-op Cordis plugin
+# that keeps the Loader row active; client-modules scans active rows and serves
+# the browser bundle declared by `dsh.client` in package.json. The browser half
+# (client.js) injects the one stylesheet rule that hides the button.
+#
+# The row id is unique to this plugin, so it overrides nothing from earlier
+# layers (dsh-base / dsh-web-app).
+- insert:
+    - id: hide-new-session
+      name: dsh-hide-new-session

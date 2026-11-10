@@ -1,0 +1,47 @@
+{
+  "name": "dsh-hide-new-session",
+  "version": "0.1.0",
+  "description": "DeepSeek Harness Web UI plugin that hides the full-width New Session button at the top of the sidebar.",
+  "type": "module",
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg",
+    "README.md",
+    "LICENSE"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true
+    }
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "web",
+    "ui",
+    "sidebar"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hobin66/dsh-hide-new-session.git"
+  },
+  "homepage": "https://github.com/hobin66/dsh-hide-new-session#readme",
+  "bugs": {
+    "url": "https://github.com/hobin66/dsh-hide-new-session/issues"
+  }
+}
